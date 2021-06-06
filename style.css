@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 14px;
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
@@ -16,7 +23,6 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-
 .container {
   margin: 20px auto;
   width: 350px;
@@ -28,8 +34,7 @@ body {
 }
 
 h1 {
-  letter-spacing: 1px;
-  margin: 0;
+  letter-spacing: 6px;
 }
 
 h3 {
@@ -44,22 +49,22 @@ h4 {
   text-align: left;
 }
 
-.exp-container {
+.inc-exp-container {
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  padding: 13px 20px;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
-.exp-container > div {
+.inc-exp-container > div {
   flex: 1;
   text-align: center;
   margin: 0 20px;
 }
 
-.exp-container > div:first-of-type {
+.inc-exp-container > div:first-of-type {
   border-right: 1px solid #dedede;
   padding-right: 40px;
 }
@@ -91,7 +96,7 @@ input {
 
 .btn {
   cursor: pointer;
-  background-color: rgb(73, 73, 73);
+  background-color: #1c2042;
   color: #fff;
   border: 0;
   display: block;
@@ -102,6 +107,7 @@ input {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 .btn:focus,
 .delete-button:focus {
   outline: 0;
@@ -109,7 +115,7 @@ input {
 
 .list {
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .list li {
@@ -123,9 +129,11 @@ input {
   margin: 10px 0;
   width: 320px;
 }
+
 .list li.plus {
   border-right: 5px solid green;
 }
+
 .list li.minus {
   border-right: 5px solid red;
 }
